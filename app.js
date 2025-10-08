@@ -91,7 +91,7 @@ function showAllPaths() {
 
       const histMarker = L.circleMarker([b[0], b[1]], {
         radius: 5,
-        fillOpacity: 0.,
+        fillOpacity: 0.55,
         className: 'historyDot'
       }).addTo(map);
 
