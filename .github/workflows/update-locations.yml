@@ -14,6 +14,75 @@ jobs:
     - name: Update 00.json
       run: |
         curl -o public/locations/00.json https://a.windbornesystems.com/treasure/00.json
+    - name: Update 01.json
+      run: |
+        curl -o public/locations/01.json https://a.windbornesystems.com/treasure/01.json
+    - name: Update 02.json
+      run: |
+        curl -o public/locations/02.json https://a.windbornesystems.com/treasure/02.json
+    - name: Update 03.json
+      run: |
+        curl -o public/locations/03.json https://a.windbornesystems.com/treasure/03.json
+    - name: Update 04.json
+      run: |
+        curl -o public/locations/04.json https://a.windbornesystems.com/treasure/04.json
+    - name: Update 05.json
+      run: |
+        curl -o public/locations/05.json https://a.windbornesystems.com/treasure/05.json
+    - name: Update 06.json
+      run: |
+        curl -o public/locations/06.json https://a.windbornesystems.com/treasure/06.json
+    - name: Update 07.json
+      run: |
+        curl -o public/locations/07.json https://a.windbornesystems.com/treasure/07.json
+    - name: Update 08.json
+      run: |
+        curl -o public/locations/08.json https://a.windbornesystems.com/treasure/08.json
+    - name: Update 09.json
+      run: |
+        curl -o public/locations/09.json https://a.windbornesystems.com/treasure/09.json
+    - name: Update 10.json
+      run: |
+        curl -o public/locations/10.json https://a.windbornesystems.com/treasure/10.json
+    - name: Update 11.json
+      run: |
+        curl -o public/locations/11.json https://a.windbornesystems.com/treasure/11.json
+    - name: Update 12.json
+      run: |
+        curl -o public/locations/12.json https://a.windbornesystems.com/treasure/12.json
+    - name: Update 13.json
+      run: |
+        curl -o public/locations/13.json https://a.windbornesystems.com/treasure/13.json
+    - name: Update 14.json
+      run: |
+        curl -o public/locations/14.json https://a.windbornesystems.com/treasure/14.json
+    - name: Update 15.json
+      run: |
+        curl -o public/locations/15.json https://a.windbornesystems.com/treasure/15.json
+    - name: Update 16.json
+      run: |
+        curl -o public/locations/16.json https://a.windbornesystems.com/treasure/16.json
+    - name: Update 17.json
+      run: |
+        curl -o public/locations/17.json https://a.windbornesystems.com/treasure/17.json
+    - name: Update 18.json
+      run: |
+        curl -o public/locations/18.json https://a.windbornesystems.com/treasure/18.json
+    - name: Update 19.json
+      run: |
+        curl -o public/locations/19.json https://a.windbornesystems.com/treasure/19.json
+    - name: Update 20.json
+      run: |
+        curl -o public/locations/20.json https://a.windbornesystems.com/treasure/20.json
+    - name: Update 21.json
+      run: |
+        curl -o public/locations/21.json https://a.windbornesystems.com/treasure/21.json
+    - name: Update 22.json
+      run: |
+        curl -o public/locations/22.json https://a.windbornesystems.com/treasure/22.json
+    - name: Update 23.json
+      run: |
+        curl -o public/locations/23.json https://a.windbornesystems.com/treasure/23.json
     - name: Commit and push changes
       run: |
         git config --global user.name 'github-actions[bot]'
