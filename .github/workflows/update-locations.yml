@@ -1,0 +1,21 @@
+name: update locations json
+on:
+  schedule:
+    - cron: '0 * * * *'
+  workflow_dispatch:
+jobs:
+  update-json:
+    runs-on: ubuntu-latest
+    steps:  
+    - name: Checkout repository
+      uses: actions/checkout@v3
+    - name: Update 00.json
+      run: |
+        curl -o public/locations/00.json https://a.windbornesystems.com/treasure/00/json
+    - name: Commit and push changes
+      run: |
+        git config --global user.name 'github-actions[bot]'
+        git config --global user.email 'github-actions[bot]@users.noreply.github
+        git add public
+        git commit -m 'Update locations' || echo "No changes to commit"
+        git push
