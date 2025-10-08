@@ -1,4 +1,6 @@
 name: update locations json
+permissions:
+  contents: write
 on:
   schedule:
     - cron: '0 * * * *'
@@ -18,4 +20,4 @@ jobs:
         git config --global user.email 'github-actions[bot]@users.noreply.github'
         git add public
         git commit -m 'Update locations' || echo "No changes to commit"
-        git push
+        git push https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git HEAD:main
