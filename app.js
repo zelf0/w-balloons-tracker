@@ -34,6 +34,7 @@ const altitudeColorStops = [
   { alt: 21,  color: "#dd00dd" }, // magenta
 ];
 
+//Test colors
 // const test = document.getElementById('test');
 // document.getElementById('test').innerHTML = 
 // `
@@ -203,12 +204,6 @@ function showHistory(balloonId) {
     if (!b) continue;
 
     const histMarker = L.circleMarker([b[0], b[1]], {
-//   radius: 6,
-//   fillOpacity: 0.7,
-//   color: getColorForAltitude(b[2]),      // border color
-//   fillColor: "white",  // fill color
-// //   weight:  (10 + (map.getZoom() * (map.getZoom() - 1.5))),
-//   className: 'historyDot'
 radius: 5,
         fillOpacity: 0.55,
         className: 'historyDot',
@@ -216,7 +211,7 @@ radius: 5,
         fillColor: getColorForAltitude(b[2]),  // fill color
         weight: 2,
 }).addTo(map);
-
+    histMarker.bindPopup(`Hour -${h}<br> Altitude: ${b[2]} m`, { className: 'popup' }); 
     historyMarkers.push(histMarker);
   }
 }
