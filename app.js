@@ -156,7 +156,7 @@ fetchAndDisplayBalloons();
 
 const historicalData = {}; // {hour: balloons[]}
 for (let h = 1; h <= 23; h++) {
-  fetch(`/public/locations/${String(h).padStart(2, '0')}.json`)
+  fetch(`public/locations/${String(h).padStart(2, '0')}.json`)
     .then(res => res.json())
     .then(data => { historicalData[h] = data; });
 }
