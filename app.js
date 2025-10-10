@@ -34,51 +34,51 @@ const altitudeColorStops = [
   { alt: 21,  color: "#dd00dd" }, // magenta
 ];
 
-const test = document.getElementById('test');
-document.getElementById('test').innerHTML = 
-`
-<p style = {color: "green"}> 0 </p>
-<div style = "background-color: ${getColorForAltitude(1)}"> 1 </div>
-<div style = "background-color: ${getColorForAltitude(2)}"> 2 </div>
-<div style = "background-color: ${getColorForAltitude(2.5)}"> 2.5 </div>
-<div style = "background-color: ${getColorForAltitude(3)}"> 3 </div>
-<div style = "background-color: ${getColorForAltitude(3.5)}"> 3.5 </div>
-<div style = "background-color: ${getColorForAltitude(4)}"> 4 </div>
-<div style = "background-color: ${getColorForAltitude(4.5)}"> 4.5 </div>
-<div style = "background-color: ${getColorForAltitude(5)}"> 5 </div>
-<div style = "background-color: ${getColorForAltitude(5.5)}"> 5.5 </div>
-<div style = "background-color: ${getColorForAltitude(6)}"> 6 </div>
-<div style = "background-color: ${getColorForAltitude(6.5)}"> 6.5 </div>
-<div style = "background-color: ${getColorForAltitude(7)}"> 7 </div>
-<div style = "background-color: ${getColorForAltitude(7.5)}"> 7.5 </div>
-<div style = "background-color: ${getColorForAltitude(8)}"> 8 </div>
-<div style = "background-color: ${getColorForAltitude(8.5)}"> 8.5 </div>
-<div style = "background-color: ${getColorForAltitude(9)}"> 9 </div>
-<div style = "background-color: ${getColorForAltitude(9.5)}"> 9.5 </div>
-<div style = "background-color: ${getColorForAltitude(10)}"> 10 </div>
-<div style = "background-color: ${getColorForAltitude(10.5)}"> 10.5 </div>
-<div style = "background-color: ${getColorForAltitude(11)}"> 11 </div>
-<div style = "background-color: ${getColorForAltitude(11.5)}"> 11.5 </div>
-<div style = "background-color: ${getColorForAltitude(12)}"> 12 </div>
-<div style = "background-color: ${getColorForAltitude(12.5)}"> 12.5 </div>
-<div style = "background-color: ${getColorForAltitude(13)}"> 13 </div>
-<div style = "background-color: ${getColorForAltitude(13.5)}"> 13.5 </div>
-<div style = "background-color: ${getColorForAltitude(14)}"> 14 </div>
-<div style = "background-color: ${getColorForAltitude(14.5)}"> 14.5 </div>
-<div style = "background-color: ${getColorForAltitude(15)}"> 15 </div>
-<div style = "background-color: ${getColorForAltitude(15.5)}"> 15.5 </div>
-<div style = "background-color: ${getColorForAltitude(16)}"> 16 </div>
-<div style = "background-color: ${getColorForAltitude(16.5)}"> 16.5 </div>
-<div style = "background-color: ${getColorForAltitude(17)}"> 17 </div>
-<div style = "background-color: ${getColorForAltitude(17.5)}"> 17.5 </div>
-<div style = "background-color: ${getColorForAltitude(18)}"> 18 </div>
-<div style = "background-color: ${getColorForAltitude(18.5)}"> 18.5 </div>
-<div style = "background-color: ${getColorForAltitude(19)}"> 19 </div>
-<div style = "background-color: ${getColorForAltitude(19.5)}"> 19.5 </div>
-<div style = "background-color: ${getColorForAltitude(20)}"> 20 </div>
-<div style = "background-color: ${getColorForAltitude(21)}"> 21 </div>
-<div style = "background-color: ${getColorForAltitude(25)}"> 25 </div>
-`
+// const test = document.getElementById('test');
+// document.getElementById('test').innerHTML = 
+// `
+// <p style = {color: "green"}> 0 </p>
+// <div style = "background-color: ${getColorForAltitude(1)}"> 1 </div>
+// <div style = "background-color: ${getColorForAltitude(2)}"> 2 </div>
+// <div style = "background-color: ${getColorForAltitude(2.5)}"> 2.5 </div>
+// <div style = "background-color: ${getColorForAltitude(3)}"> 3 </div>
+// <div style = "background-color: ${getColorForAltitude(3.5)}"> 3.5 </div>
+// <div style = "background-color: ${getColorForAltitude(4)}"> 4 </div>
+// <div style = "background-color: ${getColorForAltitude(4.5)}"> 4.5 </div>
+// <div style = "background-color: ${getColorForAltitude(5)}"> 5 </div>
+// <div style = "background-color: ${getColorForAltitude(5.5)}"> 5.5 </div>
+// <div style = "background-color: ${getColorForAltitude(6)}"> 6 </div>
+// <div style = "background-color: ${getColorForAltitude(6.5)}"> 6.5 </div>
+// <div style = "background-color: ${getColorForAltitude(7)}"> 7 </div>
+// <div style = "background-color: ${getColorForAltitude(7.5)}"> 7.5 </div>
+// <div style = "background-color: ${getColorForAltitude(8)}"> 8 </div>
+// <div style = "background-color: ${getColorForAltitude(8.5)}"> 8.5 </div>
+// <div style = "background-color: ${getColorForAltitude(9)}"> 9 </div>
+// <div style = "background-color: ${getColorForAltitude(9.5)}"> 9.5 </div>
+// <div style = "background-color: ${getColorForAltitude(10)}"> 10 </div>
+// <div style = "background-color: ${getColorForAltitude(10.5)}"> 10.5 </div>
+// <div style = "background-color: ${getColorForAltitude(11)}"> 11 </div>
+// <div style = "background-color: ${getColorForAltitude(11.5)}"> 11.5 </div>
+// <div style = "background-color: ${getColorForAltitude(12)}"> 12 </div>
+// <div style = "background-color: ${getColorForAltitude(12.5)}"> 12.5 </div>
+// <div style = "background-color: ${getColorForAltitude(13)}"> 13 </div>
+// <div style = "background-color: ${getColorForAltitude(13.5)}"> 13.5 </div>
+// <div style = "background-color: ${getColorForAltitude(14)}"> 14 </div>
+// <div style = "background-color: ${getColorForAltitude(14.5)}"> 14.5 </div>
+// <div style = "background-color: ${getColorForAltitude(15)}"> 15 </div>
+// <div style = "background-color: ${getColorForAltitude(15.5)}"> 15.5 </div>
+// <div style = "background-color: ${getColorForAltitude(16)}"> 16 </div>
+// <div style = "background-color: ${getColorForAltitude(16.5)}"> 16.5 </div>
+// <div style = "background-color: ${getColorForAltitude(17)}"> 17 </div>
+// <div style = "background-color: ${getColorForAltitude(17.5)}"> 17.5 </div>
+// <div style = "background-color: ${getColorForAltitude(18)}"> 18 </div>
+// <div style = "background-color: ${getColorForAltitude(18.5)}"> 18.5 </div>
+// <div style = "background-color: ${getColorForAltitude(19)}"> 19 </div>
+// <div style = "background-color: ${getColorForAltitude(19.5)}"> 19.5 </div>
+// <div style = "background-color: ${getColorForAltitude(20)}"> 20 </div>
+// <div style = "background-color: ${getColorForAltitude(21)}"> 21 </div>
+// <div style = "background-color: ${getColorForAltitude(25)}"> 25 </div>
+// `
 
 // Helper: Convert hex to RGB
 function hexToRgb(hex) {
@@ -372,7 +372,7 @@ async function showWind(balloon, marker) {
          }
             const content = `
         <strong>Balloon ${balloon.id}</strong>
-        <p><b>Altitude: ${balloon[2]} </></p>
+        <p> Altitude: ${balloon[2]} </p>
         <div style="background-color: ${getColorForAltitude(3)}; border-radius: 5px; opacity: 0.75;")>
         Wind at 700 hPa (~3 km): ${wind.wind_speed_700hPa ?? 'N/A'} m/s, ${wind.wind_direction_700hPa ?? 'N/A'}°
         </div>
