@@ -19,11 +19,16 @@
     <div style="display: flex;  padding: 10px;">
         <div style="width: 80%; padding: 40px;">  
             <h1>Windborne Balloons Locations and History + Open-Meteo Wind Data</h1>
-            <p> Location data of Windborne balloons updated every hour.
+            <p> Location data of Windborne balloons updated every hour. </p>
+            <p>
                 Wind data from Open-Meteo API's GFS model.
+            </p>
+            <p>
+                Click balloon to see 24 hour history and current wind data at that location.
             </p>
              <label>
     <input type="checkbox" id="togglePaths" onchange="toggleAllPaths(this)">
+    <input type="checkbox" id="hideWinds" onchange="hideWinds(this)">
     Show all 24 Hour Paths
   </label>
   <div style="width: 500px; margin: 24px;">

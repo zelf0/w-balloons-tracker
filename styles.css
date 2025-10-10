@@ -3,20 +3,20 @@
 }
 
 .balloon-marker {
- /* width: 12px;
+  /* width: 12px;
   height: 12px;
   background-color: red;
   border-radius: 50%;
   border: 2px solid white; */
 
-        /* width: 80px;
+  /* width: 80px;
       height: 80px;
       opacity: 0.8;
       border: 1px solid white;
       border-radius: 50%; */
-      filter: drop-shadow(20px 20px 40px rgba(196, 196, 196, 0.482));
-       box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
-      /* box-shadow: 0 0 4px rgba(0,0,0,0.3); */
+  filter: drop-shadow(20px 20px 40px rgba(196, 196, 196, 0.482));
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+  /* box-shadow: 0 0 4px rgba(0,0,0,0.3); */
 }
 
 /* .his {
@@ -24,12 +24,12 @@
 } */
 
 .popup {
-    background: "red";
+  background: "red";
 }
 .leaflet-popup-content-wrapper {
   border-radius: 14px;
   background: "green";
-    background-color: rgba(0, 0, 0, 0.1);
+  background-color: rgba(0, 0, 0, 0.1);
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
   border: none;
   padding: 0;
@@ -37,9 +37,8 @@
   transition: all 0.2s ease-in-out;
 }
 
-
 .leaflet-popup-tip {
-  background:"yellow";
+  background: "yellow";
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
 }
 
@@ -75,7 +74,6 @@
   transform: translateY(-2px);
   box-shadow: 0 8px 8px rgba(77, 77, 77, 0.2);
 }
-
 
 .historyDot {
   width: 8px;
