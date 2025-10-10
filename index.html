@@ -16,17 +16,56 @@
     />
 </head>
 <body>
-    <h1>Windborne Balloons Locations</h1>
-      <label>
+    <div style="display: flex;  padding: 10px;">
+        <div style="width: 80%; padding: 40px;">  
+            <h1>Windborne Balloons Locations</h1>
+            <p> Location data of Windborne balloons updated every hour.
+                Wind data from Open-Meteo API's GFS model.
+            </p>
+             <label>
     <input type="checkbox" id="togglePaths" onchange="toggleAllPaths(this)">
-    24 Hour Paths
+    Show all 24 Hour Paths
   </label>
+  <div style="width: 500px; margin: 24px;">
+    Altitude Color Scale: 
+  <svg width="500" height="40">
+    <defs>
+      <linearGradient id="altGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+        <stop offset="0%"   stop-color="red"/>
+        <stop offset="10%"  stop-color="orange"/>
+        <stop offset="20%"  stop-color="yellow"/>
+        <!-- <stop offset="48%"  stop-color="green"/> -->
+        <stop offset="50%"  stop-color="cyan"/>
+        <stop offset="75%"  stop-color="blue"/>
+        <stop offset="95%" stop-color="magenta"/>
+      </linearGradient>
+    </defs>
+    <!-- Gradient rectangle -->
+    <rect x="50" y="10" width="400" height="20" rx="8" fill="url(#altGradient)" />
+    <!-- Labels -->
+    <text x="0" y="25" font-size="16" font-family="sans-serif" fill="black">&lt;2 km</text>
+    <text x="460" y="25" font-size="16" font-family="sans-serif" fill="black">&gt;22 km</text>
+  </svg>
+</div>
+              <!-- <label><input id="toggleWind" type="checkbox"> Show wind animation</label> -->
+        </div>
+    <img src="/public/assets/demo.png" alt="Website Demo" style="height: 300px;">
+</div>
+
+</div>
     <div id="map"> </div>
+<div id="test">  </div>
 </body>
 <script
     src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
     integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
     crossorigin=""
 ></script>
+<!-- <script src="https://api.windy.com/assets/map-forecast/libBoot.js"></script> -->
+<!-- <script src="https://unpkg.com/leaflet-velocity/dist/leaflet-velocity.min.js"></script> -->
+<script src="https://rawcdn.githack.com/danwild/leaflet-velocity/master/dist/leaflet-velocity.min.js"></script>
+<script src="https://unpkg.com/leaflet-polylinegradient@latest/leaflet-polylinegradient.min.js"></script>
 <script src="app.js"></script>
+<link rel="stylesheet" href="https://unpkg.com/leaflet-velocity/dist/leaflet-velocity.css">
+<!-- <script src="app.js"></script> -->
 </html>
